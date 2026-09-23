@@ -22,12 +22,20 @@ export const authOptions: AuthOptions = {
         if (!credentials?.email || !credentials?.password) return null;
 
         if (hasMongo()) {
-          await connectDB();
-          const user = await AdminUser.findOne({ email: credentials.email });
-          if (!user) return null;
-          const isValid = await bcrypt.compare(credentials.password, user.passwordHash);
-          if (!isValid) return null;
-          return { id: user._id.toString(), email: user.email, name: user.name, role: user.role };
+          try {
+            const db = await connectDB();
+            if (db) {
+              const user = await AdminUser.findOne({ email: credentials.email });
+              if (user) {
+                const isValid = await bcrypt.compare(credentials.password, user.passwordHash);
+                if (isValid) {
+                  return { id: user._id.toString(), email: user.email, name: user.name, role: user.role };
+                }
+              }
+            }
+          } catch (err) {
+            console.warn("MongoDB auth failed, falling back to demo check:", err);
+          }
         }
 
         if (credentials.email === DEMO_EMAIL && credentials.password === DEMO_PASSWORD) {

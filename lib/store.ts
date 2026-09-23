@@ -7,7 +7,7 @@ export type StoreShape = {
   packages: typeof packages;
   vehicles: typeof vehicles;
   offers: typeof offers;
-  reviews: Array<(typeof reviews)[number] & { isApproved: boolean }>;
+  reviews: Array<Omit<(typeof reviews)[number], "packageId"> & { isApproved: boolean; packageId?: string }>;
   posts: typeof posts;
   bookings: Array<{
     _id: string;
