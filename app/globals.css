@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 32 33% 96%;
+    --foreground: 24 20% 10%;
+    --card: 36 40% 98%;
+    --card-foreground: 24 20% 10%;
+    --popover: 36 40% 98%;
+    --popover-foreground: 24 20% 10%;
+    --primary: 158 42% 18%;
+    --primary-foreground: 40 50% 96%;
+    --secondary: 30 22% 90%;
+    --secondary-foreground: 24 18% 16%;
+    --muted: 32 18% 91%;
+    --muted-foreground: 24 8% 38%;
+    --accent: 28 55% 52%;
+    --accent-foreground: 24 20% 8%;
+    --destructive: 0 72% 50%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 30 16% 84%;
+    --input: 30 16% 84%;
+    --ring: 158 42% 18%;
+    --gold: 38 62% 48%;
+    --gold-foreground: 32 40% 12%;
+    --radius: 1.15rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    background-image:
+      radial-gradient(1200px 600px at 10% -10%, rgba(196, 146, 58, 0.12), transparent 55%),
+      radial-gradient(900px 500px at 110% 0%, rgba(18, 72, 56, 0.12), transparent 50%);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .glass {
+    @apply bg-white/55 backdrop-blur-xl border border-white/40 shadow-[0_20px_60px_-30px_rgba(40,24,8,0.45)];
+  }
+  .gold-line {
+    background: linear-gradient(90deg, transparent, hsl(var(--gold)), transparent);
+  }
+}
