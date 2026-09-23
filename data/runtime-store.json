@@ -1,0 +1,579 @@
+{
+  "packages": [
+    {
+      "_id": "pkg-citadel-circuit",
+      "title": "Citadel Circuit",
+      "slug": "citadel-circuit",
+      "description": "Climb the Lion Rock at sunrise, walk the fresco galleries, then sleep in a jungle pavilion with a private plunge pool. A four-day arc through Sri Lanka's cultural triangle with a historian-guide and helicopter-optional finale.",
+      "destination": "Sigiriya",
+      "durationDays": 4,
+      "price": 1890,
+      "category": "cultural",
+      "images": [
+        "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1600&q=80",
+        "https://images.unsplash.com/photo-1588598198321-9735fd52455b?auto=format&fit=crop&w=1600&q=80",
+        "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1600&q=80"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival & Dambulla",
+          "description": "Private transfer, cave temples at golden hour, tasting menu under lanterns."
+        },
+        {
+          "day": 2,
+          "title": "Sigiriya dawn",
+          "description": "Summit before the crowds, fresco walk, afternoon spa and tank-side cycling."
+        },
+        {
+          "day": 3,
+          "title": "Polonnaruwa ruins",
+          "description": "Bicycle through the medieval capital with a scholar-guide and picnic by Parakrama Samudra."
+        },
+        {
+          "day": 4,
+          "title": "Village & departure",
+          "description": "Cook with a village family, optional helicopter to Colombo, evening flight buffer."
+        }
+      ],
+      "included": [
+        "Private chauffeur",
+        "Luxury lodges",
+        "Historian guide",
+        "All breakfasts & two dinners",
+        "Park tickets"
+      ],
+      "excluded": [
+        "International flights",
+        "Travel insurance",
+        "Alcohol",
+        "Helicopter add-on"
+      ],
+      "maxPax": 6,
+      "isActive": true,
+      "createdAt": "2026-01-12T00:00:00.000Z",
+      "updatedAt": "2026-08-01T00:00:00.000Z"
+    },
+    {
+      "_id": "pkg-hill-country-express",
+      "title": "Hill Country Express",
+      "slug": "hill-country-express",
+      "description": "The blue train from Kandy to Ella, tea bungalows in the clouds, and a private tasting with a fourth-generation planter. Slow mornings, mist, and fireplaces.",
+      "destination": "Ella",
+      "durationDays": 5,
+      "price": 1640,
+      "category": "honeymoon",
+      "images": [
+        "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1600&q=80",
+        "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1600&q=80",
+        "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1600&q=80"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Kandy lake",
+          "description": "Temple of the Tooth private viewing window, lakeside walk, Kandyan drum dinner."
+        },
+        {
+          "day": 2,
+          "title": "Blue train",
+          "description": "First-class reserved seats, picnic hamper, Nine Arch photo stop."
+        },
+        {
+          "day": 3,
+          "title": "Little Adam's Peak",
+          "description": "Sunrise hike, flying ravana optional, bungalow spa."
+        },
+        {
+          "day": 4,
+          "title": "Tea highlands",
+          "description": "Factory tour, cupping session, night under a blanket of stars."
+        },
+        {
+          "day": 5,
+          "title": "Descent",
+          "description": "Scenic road to the coast or Colombo with photo stops."
+        }
+      ],
+      "included": [
+        "First-class train",
+        "Bungalow stays",
+        "Private guide",
+        "Tea tasting",
+        "Daily breakfast"
+      ],
+      "excluded": [
+        "Adventure zip-line",
+        "International flights"
+      ],
+      "maxPax": 4,
+      "isActive": true,
+      "createdAt": "2026-02-02T00:00:00.000Z",
+      "updatedAt": "2026-08-01T00:00:00.000Z"
+    },
+    {
+      "_id": "pkg-leopard-coast",
+      "title": "Leopard Coast",
+      "slug": "leopard-coast",
+      "description": "Two dawn safaris in Yala, a night in a safari tent under a fig tree, then salt spray and whale boats in Mirissa. For travelers who want wildness with linen sheets.",
+      "destination": "Yala",
+      "durationDays": 6,
+      "price": 2420,
+      "category": "adventure",
+      "images": [
+        "https://images.unsplash.com/photo-1549366021-9f761d450615?auto=format&fit=crop&w=1600&q=80",
+        "https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1600&q=80",
+        "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Into the park",
+          "description": "Transfer, sundowner at the bund, briefing with tracker."
+        },
+        {
+          "day": 2,
+          "title": "Dawn game drive",
+          "description": "Leopard circuit, picnic breakfast, afternoon hide."
+        },
+        {
+          "day": 3,
+          "title": "Second drive & coast",
+          "description": "Morning drive, lunch, drive to Mirissa villa."
+        },
+        {
+          "day": 4,
+          "title": "Whales",
+          "description": "Blue whale boat (seasonal), snorkel, beach lunch."
+        },
+        {
+          "day": 5,
+          "title": "Slow coast",
+          "description": "Galle Fort ramble, cinnamon tasting, sunset cocktail."
+        },
+        {
+          "day": 6,
+          "title": "Departure",
+          "description": "Flexible transfer to CMB or further south."
+        }
+      ],
+      "included": [
+        "Two private safaris",
+        "Tracker & naturalist",
+        "Luxury tent + villa",
+        "Whale boat",
+        "Park fees"
+      ],
+      "excluded": [
+        "Premium spirits",
+        "Flights"
+      ],
+      "maxPax": 6,
+      "isActive": true,
+      "createdAt": "2026-03-18T00:00:00.000Z",
+      "updatedAt": "2026-08-01T00:00:00.000Z"
+    },
+    {
+      "_id": "pkg-family-south",
+      "title": "Southern Story",
+      "slug": "southern-story",
+      "description": "A family-paced week: stilt fishermen, turtle hatcheries, cooking with a grandmother in Unawatuna, and a Dutch-fort treasure hunt for the kids.",
+      "destination": "Galle",
+      "durationDays": 7,
+      "price": 1280,
+      "category": "family",
+      "images": [
+        "https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&w=1600&q=80",
+        "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80",
+        "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1600&q=80"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Galle Fort",
+          "description": "Rampart walk, ice cream, boutique hotel check-in."
+        },
+        {
+          "day": 2,
+          "title": "Treasure hunt",
+          "description": "Kid-led fort quest, lighthouse, cricket on the green."
+        },
+        {
+          "day": 3,
+          "title": "Turtles",
+          "description": "Hatchery visit and reef snorkel (weather)."
+        },
+        {
+          "day": 4,
+          "title": "Kitchen day",
+          "description": "Market shop, hoppers, cinnamon chicken."
+        },
+        {
+          "day": 5,
+          "title": "Beach club",
+          "description": "Unawatuna, kayaks, sunset."
+        },
+        {
+          "day": 6,
+          "title": "Free day",
+          "description": "Optional whale watching or spa."
+        },
+        {
+          "day": 7,
+          "title": "Homeward",
+          "description": "Transfer north with cinnamon-farm stop."
+        }
+      ],
+      "included": [
+        "Family villa",
+        "Guide",
+        "Cooking class",
+        "Turtle visit",
+        "Breakfast daily"
+      ],
+      "excluded": [
+        "Whale add-on",
+        "Flights"
+      ],
+      "maxPax": 8,
+      "isActive": true,
+      "createdAt": "2026-04-04T00:00:00.000Z",
+      "updatedAt": "2026-08-01T00:00:00.000Z"
+    },
+    {
+      "_id": "pkg-wellness-mist",
+      "title": "Mist & Stillness",
+      "slug": "mist-and-stillness",
+      "description": "A silent retreat in Nuwara Eliya: Ayurveda physicians, forest bathing, and a glasshouse supper. Designed for reset, not itinerary packing.",
+      "destination": "Nuwara Eliya",
+      "durationDays": 5,
+      "price": 2100,
+      "category": "honeymoon",
+      "images": [
+        "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1600&q=80",
+        "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1600&q=80",
+        "https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?auto=format&fit=crop&w=1600&q=80"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival ritual",
+          "description": "Pulse reading, herbal steam, early night."
+        },
+        {
+          "day": 2,
+          "title": "Forest",
+          "description": "Guided forest bathing, yoga, physician consult."
+        },
+        {
+          "day": 3,
+          "title": "Still day",
+          "description": "Treatments, journaling terrace, no vehicles."
+        },
+        {
+          "day": 4,
+          "title": "Lake Gregory",
+          "description": "Optional gentle walk, glasshouse dinner."
+        },
+        {
+          "day": 5,
+          "title": "Close",
+          "description": "Take-home protocol and slow transfer."
+        }
+      ],
+      "included": [
+        "Ayurveda physician",
+        "Daily treatments",
+        "Plant-based menus",
+        "Suite",
+        "Transfers"
+      ],
+      "excluded": [
+        "Alcohol",
+        "Flights"
+      ],
+      "maxPax": 2,
+      "isActive": true,
+      "createdAt": "2026-05-09T00:00:00.000Z",
+      "updatedAt": "2026-08-01T00:00:00.000Z"
+    },
+    {
+      "_id": "pkg-city-spice",
+      "title": "Colombo After Dark",
+      "slug": "colombo-after-dark",
+      "description": "A 48-hour city sprint: Pettah spice alleys, gallery hops, a chef's table in a colonial warehouse, and a sunrise at Galle Face.",
+      "destination": "Colombo",
+      "durationDays": 2,
+      "price": 640,
+      "category": "cultural",
+      "images": [
+        "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1600&q=80",
+        "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=1600&q=80",
+        "https://images.unsplash.com/photo-1514565131-fce0801e5785?auto=format&fit=crop&w=1600&q=80"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Markets & galleries",
+          "description": "Pettah, street food crawl, contemporary art, warehouse dinner."
+        },
+        {
+          "day": 2,
+          "title": "Ocean & exit",
+          "description": "Sunrise walk, Dutch Hospital coffee, airport or onward."
+        }
+      ],
+      "included": [
+        "Boutique hotel",
+        "Food guide",
+        "Gallery tickets",
+        "Airport transfer"
+      ],
+      "excluded": [
+        "Flights",
+        "Shopping"
+      ],
+      "maxPax": 4,
+      "isActive": true,
+      "createdAt": "2026-06-01T00:00:00.000Z",
+      "updatedAt": "2026-08-01T00:00:00.000Z"
+    }
+  ],
+  "vehicles": [
+    {
+      "_id": "veh-phoenix-van",
+      "name": "Phoenix Van",
+      "type": "van",
+      "capacity": 8,
+      "images": [
+        "https://images.unsplash.com/photo-1527786356703-4b100091cd2c?auto=format&fit=crop&w=1600&q=80",
+        "https://images.unsplash.com/photo-1464219789935-c2d9d9aba644?auto=format&fit=crop&w=1600&q=80"
+      ],
+      "features": [
+        "Climate control",
+        "USB-C power",
+        "English-speaking chauffeur",
+        "Cooler box",
+        "Wi-Fi hotspot"
+      ],
+      "isActive": true,
+      "ratePerDay": 120
+    },
+    {
+      "_id": "veh-cinnamon-suv",
+      "name": "Cinnamon SUV",
+      "type": "SUV",
+      "capacity": 5,
+      "images": [
+        "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=1600&q=80"
+      ],
+      "features": [
+        "AWD highlands",
+        "Leather",
+        "Child seats on request",
+        "Roof rails",
+        "Chauffeur"
+      ],
+      "isActive": true,
+      "ratePerDay": 95
+    },
+    {
+      "_id": "veh-monsoon-coach",
+      "name": "Monsoon Coach",
+      "type": "bus",
+      "capacity": 18,
+      "images": [
+        "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1600&q=80"
+      ],
+      "features": [
+        "Recliners",
+        "PA system",
+        "Onboard restroom",
+        "Luggage trailer",
+        "Two drivers on long hauls"
+      ],
+      "isActive": true,
+      "ratePerDay": 210
+    },
+    {
+      "_id": "veh-pearl-sedan",
+      "name": "Pearl Sedan",
+      "type": "sedan",
+      "capacity": 3,
+      "images": [
+        "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=1600&q=80"
+      ],
+      "features": [
+        "Airport specialist",
+        "Water & wifi",
+        "Meet & greet",
+        "Night surcharge waived"
+      ],
+      "isActive": true,
+      "ratePerDay": 70
+    }
+  ],
+  "offers": [
+    {
+      "_id": "off-monsoon-edit",
+      "title": "Monsoon Edit",
+      "description": "Fifteen percent off Hill Country Express when you travel in the green season — waterfalls at full voice and empty bungalows.",
+      "discountText": "15% off",
+      "packageId": "pkg-hill-country-express",
+      "image": "https://images.unsplash.com/photo-1439066615861-d1af74d74000?auto=format&fit=crop&w=1400&q=80",
+      "startDate": "2026-09-01T00:00:00.000Z",
+      "endDate": "2026-12-15T00:00:00.000Z",
+      "isActive": true
+    },
+    {
+      "_id": "off-honeymoon-veil",
+      "title": "Honeymoon Veil",
+      "description": "Complimentary spa ritual and champagne on Mist & Stillness or Hill Country Express for couples booking 60 days out.",
+      "discountText": "Spa + champagne",
+      "packageId": "pkg-wellness-mist",
+      "image": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1400&q=80",
+      "startDate": "2026-08-01T00:00:00.000Z",
+      "endDate": "2027-03-01T00:00:00.000Z",
+      "isActive": true
+    },
+    {
+      "_id": "off-family-fifth",
+      "title": "Fifth Seat Free",
+      "description": "Children under 12 travel complimentary on Southern Story when sharing a villa with two paying adults.",
+      "discountText": "Child travels free",
+      "packageId": "pkg-family-south",
+      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=80",
+      "startDate": "2026-07-01T00:00:00.000Z",
+      "endDate": "2026-11-30T00:00:00.000Z",
+      "isActive": true
+    }
+  ],
+  "reviews": [
+    {
+      "_id": "rev-1",
+      "customerName": "Amelia Hart",
+      "rating": 5,
+      "comment": "The Lion Rock at 5:40am is a memory I'll keep. Our guide knew every fresco by name and never rushed us.",
+      "packageId": "pkg-citadel-circuit",
+      "isApproved": true,
+      "createdAt": "2026-06-11T00:00:00.000Z"
+    },
+    {
+      "_id": "rev-2",
+      "customerName": "Kenji Sato",
+      "rating": 5,
+      "comment": "Train seats were actually reserved. Picnic was better than the hotel breakfast. Ella bungalow fireplace: perfect.",
+      "packageId": "pkg-hill-country-express",
+      "isApproved": true,
+      "createdAt": "2026-05-22T00:00:00.000Z"
+    },
+    {
+      "_id": "rev-3",
+      "customerName": "Priya Menon",
+      "rating": 5,
+      "comment": "Two leopard sightings and a tracker who whispered like a poet. Then whales the next morning. Unreal pacing.",
+      "packageId": "pkg-leopard-coast",
+      "isApproved": true,
+      "createdAt": "2026-04-18T00:00:00.000Z"
+    },
+    {
+      "_id": "rev-4",
+      "customerName": "The Okonks",
+      "rating": 4,
+      "comment": "Kids still talk about the fort treasure hunt. Villa pool was heaven. Slight delay on the turtle morning.",
+      "packageId": "pkg-family-south",
+      "isApproved": true,
+      "createdAt": "2026-03-09T00:00:00.000Z"
+    },
+    {
+      "_id": "rev-5",
+      "customerName": "Sofia Almeida",
+      "rating": 5,
+      "comment": "I came to disappear for five days. They let me. The physician's protocol followed me home.",
+      "packageId": "pkg-wellness-mist",
+      "isApproved": true,
+      "createdAt": "2026-02-14T00:00:00.000Z"
+    },
+    {
+      "_id": "rev-6",
+      "customerName": "Jonah Reed",
+      "rating": 5,
+      "comment": "Colombo in 48 hours shouldn't work. It did. Pettah with a local is a different city.",
+      "packageId": "pkg-city-spice",
+      "isApproved": true,
+      "createdAt": "2026-01-28T00:00:00.000Z"
+    }
+  ],
+  "posts": [
+    {
+      "_id": "post-when-to-go",
+      "title": "When to walk Sri Lanka",
+      "slug": "when-to-walk-sri-lanka",
+      "coverImage": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1600&q=80",
+      "excerpt": "A candid season guide — not the brochure version — for west-coast beaches, hill-country mist, and Yala's leopard months.",
+      "content": "The island has two monsoons, which is a gift if you know how to use them.\n\n**December to March** is the classic west and south window: Galle, Mirissa, and the cultural triangle stay dry enough for dawn climbs. Yala is at its most generous with cats in the drier months, typically February through June, though wildlife never signs a contract.\n\n**May to September** turns the east and the highlands cinematic. Waterfalls in Ella go loud. The west gets afternoon storms that smell like wet cinnamon. If you can travel then, rooms are kinder and the landscape is greener than any postcard.\n\nWe plan around your tolerance for rain, not a calendar cliché. Tell us the month you can actually take off — we'll route around the weather.",
+      "isPublished": true,
+      "createdAt": "2026-07-02T00:00:00.000Z"
+    },
+    {
+      "_id": "post-train-seats",
+      "title": "How we actually book the blue train",
+      "slug": "how-we-book-the-blue-train",
+      "coverImage": "https://images.unsplash.com/photo-1474487548417-781cb71495f3?auto=format&fit=crop&w=1600&q=80",
+      "excerpt": "Observation car myths, first-class realities, and why we sometimes put you in a car instead.",
+      "content": "The Kandy–Ella train is not a guarantee. It is a negotiation with a beloved, oversubscribed railway.\n\nWe hold first-class reserved seats when the roster opens. Observation cars are luck, not a product. If the train is sold out, we do not fake it — we drive the A5 with timed photo stops and a hamper, which many guests prefer once they feel the air.\n\nNever buy a \"guaranteed observation car\" from a stranger on Instagram. If we cannot get the seats, we say so before you fly.",
+      "isPublished": true,
+      "createdAt": "2026-06-18T00:00:00.000Z"
+    },
+    {
+      "_id": "post-packing",
+      "title": "What to pack for a private circuit",
+      "slug": "what-to-pack-private-circuit",
+      "coverImage": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1600&q=80",
+      "excerpt": "Linen, leeches, temples, and the one jacket that earns its suitcase space.",
+      "content": "Bring a light rain shell even in \"dry\" months. Temples need covered shoulders and knees — a scarf solves both. Leech socks for Horton Plains; flip-flops for the south.\n\nWe provide coolers, binoculars on safari, and a medical kit in every vehicle. Leave the travel iron. Leave five pairs of shoes. Bring one nice shirt for the warehouse dinner in Colombo.\n\nPharmacy: your usual prescriptions plus a small electrolyte stash. Island heat is polite until it isn't.",
+      "isPublished": true,
+      "createdAt": "2026-05-04T00:00:00.000Z"
+    }
+  ],
+  "bookings": [
+    {
+      "_id": "bkg-1",
+      "customerName": "Elena Voss",
+      "email": "elena@example.com",
+      "phone": "+49 170 000 1122",
+      "packageId": "pkg-citadel-circuit",
+      "travelDate": "2026-10-14T00:00:00.000Z",
+      "paxCount": 2,
+      "message": "Anniversary — prefer a plunge-pool pavilion.",
+      "status": "pending",
+      "createdAt": "2026-09-20T00:00:00.000Z"
+    },
+    {
+      "_id": "bkg-2",
+      "customerName": "Marcus Chen",
+      "email": "marcus@example.com",
+      "phone": "+65 9000 2211",
+      "packageId": "pkg-leopard-coast",
+      "vehicleId": "veh-cinnamon-suv",
+      "travelDate": "2026-11-02T00:00:00.000Z",
+      "paxCount": 3,
+      "message": "One child, age 9.",
+      "status": "contacted",
+      "adminNotes": "Sent villa options.",
+      "createdAt": "2026-09-12T00:00:00.000Z"
+    },
+    {
+      "_id": "bkg-3",
+      "customerName": "Imani Adeyemi",
+      "email": "imani@example.com",
+      "phone": "+44 7700 900123",
+      "packageId": "pkg-hill-country-express",
+      "travelDate": "2026-10-28T00:00:00.000Z",
+      "paxCount": 2,
+      "status": "confirmed",
+      "adminNotes": "Train seats held.",
+      "createdAt": "2026-08-30T00:00:00.000Z"
+    }
+  ]
+}

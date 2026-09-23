@@ -12,7 +12,9 @@ export default function Footer() {
         <div>
           <p className="text-xs uppercase tracking-[0.2em] text-white/40 mb-3">Explore</p>
           <ul className="space-y-2 text-sm text-white/75">
+            <li><Link href="/destinations">Destinations</Link></li>
             <li><Link href="/packages">Packages</Link></li>
+            <li><Link href="/planner">Trip Planner</Link></li>
             <li><Link href="/vehicles">Fleet</Link></li>
             <li><Link href="/offers">Offers</Link></li>
           </ul>

@@ -5,8 +5,8 @@ import type { BookingStatus } from "@/schemas/types";
 
 export type StoreShape = {
   packages: typeof packages;
-  vehicles: typeof vehicles;
-  offers: typeof offers;
+  vehicles: Array<(typeof vehicles)[number] & { ratePerDay?: number }>;
+  offers: Array<Omit<(typeof offers)[number], "packageId" | "promoCode"> & { packageId?: string; promoCode?: string }>;
   reviews: Array<Omit<(typeof reviews)[number], "packageId"> & { isApproved: boolean; packageId?: string }>;
   posts: typeof posts;
   bookings: Array<{

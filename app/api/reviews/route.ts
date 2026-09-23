@@ -3,7 +3,7 @@ import { z } from "zod";
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/lib/auth";
 import { rateLimit } from "@/lib/rateLimit";
-import { createReview, getPendingReviews } from "@/lib/data";
+import { createReview, getPendingReviews, getAllReviewsAdmin, getApprovedReviews } from "@/lib/data";
 
 const reviewSchema = z.object({
   customerName: z.string().min(2).max(100),
@@ -12,11 +12,24 @@ const reviewSchema = z.object({
   packageId: z.string().optional(),
 });
 
-export async function GET() {
+export async function GET(req: NextRequest) {
+  const { searchParams } = new URL(req.url);
+  const filter = searchParams.get("filter");
+
+  // Admin access
   const session = await getServerSession(authOptions);
-  if (!session) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
-  const pending = await getPendingReviews();
-  return NextResponse.json(pending);
+  if (session) {
+    if (filter === "all") {
+      const all = await getAllReviewsAdmin();
+      return NextResponse.json(all);
+    }
+    const pending = await getPendingReviews();
+    return NextResponse.json(pending);
+  }
+
+  // Public approved reviews
+  const approved = await getApprovedReviews();
+  return NextResponse.json(approved);
 }
 
 export async function POST(req: NextRequest) {

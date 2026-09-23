@@ -1,12 +1,13 @@
 import { NextResponse } from "next/server";
-import { getPackageById, updatePackage, deletePackage } from "@/lib/data";
+import { updatePost, deletePost, getAllPostsAdmin } from "@/lib/data";
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/lib/auth";
 
 export async function GET(_req: Request, { params }: { params: { id: string } }) {
-  const pkg = await getPackageById(params.id);
-  if (!pkg) return NextResponse.json({ error: "Not found" }, { status: 404 });
-  return NextResponse.json(pkg);
+  const posts = await getAllPostsAdmin();
+  const post = posts.find((p) => p._id === params.id);
+  if (!post) return NextResponse.json({ error: "Post not found" }, { status: 404 });
+  return NextResponse.json(post);
 }
 
 export async function PATCH(req: Request, { params }: { params: { id: string } }) {
@@ -17,13 +18,13 @@ export async function PATCH(req: Request, { params }: { params: { id: string } }
 
   try {
     const body = await req.json();
-    const updated = await updatePackage(params.id, body);
+    const updated = await updatePost(params.id, body);
     if (!updated) {
-      return NextResponse.json({ error: "Package not found" }, { status: 404 });
+      return NextResponse.json({ error: "Post not found" }, { status: 404 });
     }
     return NextResponse.json(updated);
   } catch (error) {
-    return NextResponse.json({ error: "Failed to update package", details: String(error) }, { status: 500 });
+    return NextResponse.json({ error: "Failed to update post", details: String(error) }, { status: 500 });
   }
 }
 
@@ -33,9 +34,9 @@ export async function DELETE(_req: Request, { params }: { params: { id: string }
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 
-  const success = await deletePackage(params.id);
+  const success = await deletePost(params.id);
   if (!success) {
-    return NextResponse.json({ error: "Package not found" }, { status: 404 });
+    return NextResponse.json({ error: "Post not found" }, { status: 404 });
   }
   return NextResponse.json({ success: true });
 }

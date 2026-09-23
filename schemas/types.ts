@@ -27,6 +27,7 @@ export interface IVehicle {
   name: string;
   type: string; // e.g. "van", "sedan", "SUV", "bus"
   capacity: number;
+  ratePerDay: number;
   images: string[];
   features: string[]; // e.g. "AC", "WiFi", "Driver included"
   isActive: boolean;
@@ -39,9 +40,10 @@ export interface IOffer {
   discountText: string; // e.g. "20% off" or "Free airport pickup"
   packageId?: string; // optional link to a specific package
   image: string;
-  startDate: Date;
-  endDate: Date;
+  startDate: string | Date;
+  endDate: string | Date;
   isActive: boolean;
+  promoCode?: string;
 }
 
 export interface IReview {

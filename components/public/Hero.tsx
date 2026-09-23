@@ -32,7 +32,7 @@ export default function Hero({
       {frames.map((src, idx) => (
         <div
           key={src}
-          className="absolute inset-0 transition-opacity duration-[1600ms]"
+          className="absolute inset-0 transition-opacity duration-1000"
           style={{ opacity: idx === i ? 1 : 0 }}
         >
           <div

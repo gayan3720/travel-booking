@@ -225,7 +225,7 @@ export const vehicles = [
     type: "bus",
     capacity: 18,
     images: [
-      "https://images.unsplash.com/photo-1544620341-11cb2cd7d68d?auto=format&fit=crop&w=1600&q=80",
+      "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1600&q=80",
     ],
     features: ["Recliners", "PA system", "Onboard restroom", "Luggage trailer", "Two drivers on long hauls"],
     isActive: true,

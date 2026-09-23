@@ -1,18 +1,16 @@
-import { getPosts } from "@/lib/data";
+import JournalManager from "@/components/admin/JournalManager";
 
-export default async function AdminBlogPage() {
-  const posts = await getPosts();
+export default function AdminBlogPage() {
   return (
-    <div>
-      <h1 className="font-display text-4xl mb-6">Journal CMS</h1>
-      <div className="space-y-3">
-        {posts.map((p) => (
-          <div key={p._id} className="bg-white rounded-2xl p-5 border">
-            <p className="font-medium">{p.title}</p>
-            <p className="text-sm text-muted-foreground">{p.slug} · published</p>
-          </div>
-        ))}
+    <div className="space-y-6">
+      <div>
+        <h1 className="font-display text-4xl text-foreground">Travel Journal & Content CMS</h1>
+        <p className="text-sm text-muted-foreground mt-1">
+          Publish SEO travel guides, insider cultural stories, and packing tips to attract organic tourist traffic.
+        </p>
       </div>
+
+      <JournalManager />
     </div>
   );
 }

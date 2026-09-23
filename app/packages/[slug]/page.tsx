@@ -4,7 +4,7 @@ import { getApprovedReviews, getPackageBySlug, getPackages } from "@/lib/data";
 import BookingInquiryForm from "@/components/public/BookingInquiryForm";
 import ItineraryTimeline from "@/components/public/ItineraryTimeline";
 import ReviewList from "@/components/public/ReviewList";
-import { formatCurrency } from "@/lib/utils";
+import PackageDetailPrice from "@/components/public/PackageDetailPrice";
 
 export const revalidate = 300;
 
@@ -85,9 +85,8 @@ export default async function PackageDetailPage({ params }: { params: { slug: st
         </div>
       </div>
       <div className="lg:col-span-1">
-        <div className="glass rounded-[1.8rem] p-6 sticky top-24">
-          <p className="font-display text-4xl text-primary">{formatCurrency(pkg.price)}</p>
-          <p className="text-sm text-muted-foreground mb-5">per person · inquiry only</p>
+        <div className="glass rounded-[1.8rem] p-6 sticky top-24 space-y-4">
+          <PackageDetailPrice price={pkg.price} />
           <BookingInquiryForm packageId={pkg._id} />
         </div>
       </div>

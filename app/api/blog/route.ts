@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { getOffers, getAllOffersAdmin, createOffer } from "@/lib/data";
+import { getPosts, getAllPostsAdmin, createPost } from "@/lib/data";
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/lib/auth";
 
@@ -12,12 +12,12 @@ export async function GET(req: Request) {
     if (!session) {
       return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
     }
-    const all = await getAllOffersAdmin();
+    const all = await getAllPostsAdmin();
     return NextResponse.json(all);
   }
 
-  const offers = await getOffers();
-  return NextResponse.json(offers);
+  const posts = await getPosts();
+  return NextResponse.json(posts);
 }
 
 export async function POST(req: Request) {
@@ -28,15 +28,14 @@ export async function POST(req: Request) {
 
   try {
     const body = await req.json();
-    if (!body.title || !body.discountText || !body.startDate || !body.endDate) {
-      return NextResponse.json(
-        { error: "Title, discount description, start date, and end date are required" },
-        { status: 400 }
-      );
+    if (!body.title || !body.content) {
+      return NextResponse.json({ error: "Title and content are required" }, { status: 400 });
     }
-    const created = await createOffer(body);
+    const slug = body.slug || body.title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+    const excerpt = body.excerpt || body.content.slice(0, 150) + "...";
+    const created = await createPost({ ...body, slug, excerpt });
     return NextResponse.json(created, { status: 201 });
   } catch (error) {
-    return NextResponse.json({ error: "Failed to create offer", details: String(error) }, { status: 500 });
+    return NextResponse.json({ error: "Failed to create post", details: String(error) }, { status: 500 });
   }
 }
